@@ -1,17 +1,16 @@
-import "./App.css";
+import { useState } from "react";
 import Header from "./Components/Header";
-import Right from "./Components/Right";
-import Left from "./Components/Left-side";
 import Middle from "./Components/Middle";
+import "./App.css";
 
 function App() {
+  const [selected, setSelected] = useState("Home");
+
   return (
     <>
-      <Header></Header>
+      <Header selected={selected} setSelected={setSelected} />
       <div className="flex flex-row">
-        <Left></Left>
-        <Middle></Middle>
-        <Right></Right>
+        <Middle selected={selected} />
       </div>
     </>
   );

@@ -1,12 +1,20 @@
-import React from 'react'
-import Home from "./Home"
+import React from "react";
+import Home from "./Home";
+import Friends from "./Friends";
+import Watch from "./Watch";
+import Marketplace from "./Marketplace";
 
-const Middle = () => {
+const Middle = ({ selected }) => {
   return (
-    <div className='text-4xl'>
-        <div className="h-lvh w-sm ml-20 bg-black text-white mr-20 shadow-1xl">bb</div>
+    <div className="text-4xl w-full flex justify-center">
+      <div className="h-full w-full bg-white   ">
+        {selected === "Home" && <Home />}
+        {selected === "Friends" && <Friends />}
+        {selected === "Watch" && <Watch />}
+        {selected === "Marketplace" && <Marketplace />}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Middle
+export default Middle;

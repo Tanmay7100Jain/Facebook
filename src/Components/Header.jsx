@@ -1,9 +1,4 @@
-import { useState } from "react";
-import Home from "./Home";
-import Friends from "./Friends";
-import Watch from "./Watch";
-import Marketplace from "./Marketplace";
-import Middle from "./Middle";
+import React from "react";
 
 const navItems = [
   { name: "Home", src: "img1.png" },
@@ -16,12 +11,11 @@ const navItems = [
   { name: "Account", src: "account.png" },
 ];
 
-const Header = () => {
-  const [selected, setSelected] = useState("Home");
-
+const Header = ({ selected, setSelected }) => {
   return (
-    <header className="flex items-center justify-between p-4 bg-white shadow-md m-0">
-      <div className="flex items-center space-x-4 justify-between">
+    <>
+    <header className="flex items-center justify-between shadow-black shadow-2xs p-4 bg-white ">
+      <div className="flex items-center space-x-4">
         <img src="download.png" className="h-12 w-12" alt="Facebook Logo" />
         <div className="flex items-center px-4 py-2 border rounded-full bg-white focus-within:ring-2 focus-within:ring-blue-500">
           <img className="h-5 w-5 mr-2" src="Seacrh1.svg" alt="Search Icon" />
@@ -44,31 +38,19 @@ const Header = () => {
               src={item.src}
               alt={item.name}
               onClick={() => setSelected(item.name)}
-              className={`h-8 w-8 cursor-pointer transition-all duration-200 
-                ${index === 0 ? "ml-24" : index === 4 ? "ml-44" : "ml-8 mr-4"} 
-                ${
-                  selected === item.name && index <= 8
-                    ? "border-b-4 border-blue-700"
-                    : ""
-                } 
-                ${
-                  selected === item.name && index > 3
-                    ? "bg-blue-900 rounded-full "
-                    : ""
-                }
+              className={`h-8 w-8 cursor-pointer transition-all duration-200
+                ${index === 0 ? "ml-24" : index === 4 ? "ml-44" : "ml-8 mr-4"}
+                ${selected === item.name && index <= 3 ? "border-b-4 border-blue-700" : ""}
+                ${selected === item.name && index > 3 ? "bg-blue-900 rounded-full p-1" : ""}
               `}
             />
           ))}
         </div>
       </div>
-
-      <div className="mt-4">
-        {selected === "Home" && <Home />}
-        {selected === "Friends" && <Friends />}
-        {selected === "Watch" && <Watch />}
-        {selected === "Marketplace" && <Marketplace/>}
-      </div>
     </header>
+    <hr className="bg-white text-white"  />
+    </>
+    
   );
 };
 
