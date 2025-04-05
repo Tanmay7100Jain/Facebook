@@ -3,7 +3,6 @@ const Marketplace = () => {
     <>
       {" "}
       <div>Marketplace</div>
-      <span>1</span>
     </>
   );
 };

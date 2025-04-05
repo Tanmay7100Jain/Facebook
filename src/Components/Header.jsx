@@ -2,6 +2,9 @@ import { useState } from "react";
 import Home from "./Home";
 import Friends from "./Friends";
 import Watch from "./Watch";
+import Marketplace from "./Marketplace";
+import Middle from "./Middle";
+
 const navItems = [
   { name: "Home", src: "img1.png" },
   { name: "Friends", src: "img2.png" },
@@ -42,7 +45,7 @@ const Header = () => {
               alt={item.name}
               onClick={() => setSelected(item.name)}
               className={`h-8 w-8 cursor-pointer transition-all duration-200 
-                ${index === 0 ? "ml-24" : index === 4 ? "ml-40" : "ml-8 mr-4"} 
+                ${index === 0 ? "ml-24" : index === 4 ? "ml-44" : "ml-8 mr-4"} 
                 ${
                   selected === item.name && index <= 8
                     ? "border-b-4 border-blue-700"
@@ -63,7 +66,7 @@ const Header = () => {
         {selected === "Home" && <Home />}
         {selected === "Friends" && <Friends />}
         {selected === "Watch" && <Watch />}
-        {selected === "Watch" && <Watch />}
+        {selected === "Marketplace" && <Marketplace/>}
       </div>
     </header>
   );

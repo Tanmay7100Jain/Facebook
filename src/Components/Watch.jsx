@@ -6,4 +6,4 @@ const Watch = () => {
   )
 }
 
-export default Watch
+export default Watch;
