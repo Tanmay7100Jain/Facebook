@@ -1,9 +1,11 @@
-import React from 'react'
-
 const Marketplace = () => {
   return (
-    <div>Marketplace</div>
-  )
-}
+    <>
+      {" "}
+      <div>Marketplace</div>
+      <span>1</span>
+    </>
+  );
+};
 
-export default Marketplace
+export default Marketplace;
