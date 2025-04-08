@@ -24,6 +24,7 @@ const Friends = () => {
               className="h-9 w-9 rounded-full bg-gray-200 object-cover"
             />
             <span className="text-gray-800 text-base font-medium">{item.label}</span>
+            <div></div>
           </div>
         ))}
       </div>
