@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const items = [
   { icon: 'account.png', label: 'Tanmay Jain' },
@@ -16,13 +16,19 @@ const items = [
 ];
 
 const Home = () => {
+  const [selected, setSelected] = useState("Tanmay Jain");
+
   return (
     <div className="flex flex-col md:flex-row px-4 py-6 gap-6">
       <div className="h-[28rem] overflow-y-auto flex flex-col items-start space-y-4 w-full md:w-72 p-2 pr-4 rounded-md bg-white shadow-sm scroll-smooth scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex items-center w-full space-x-3 px-3 py-2 rounded-md hover:bg-gray-100 transition duration-200 cursor-pointer"
+            className={`flex items-center w-full space-x-3 px-3 py-2 rounded-md transition duration-200 cursor-pointer 
+              ${selected === item.label ? "bg-blue-100 text-blue-700" : "hover:bg-gray-100"}`}
+            onClick={() => setSelected(item.label)}
+            role="button"
+            tabIndex={0}
           >
             <img
               src={item.icon}
@@ -43,7 +49,7 @@ const Home = () => {
           />
           <input
             type="text"
-            placeholder="What's on your mind, Tanmay?"
+            placeholder={`What's on your mind, Tanmay?`}
             className="w-full bg-transparent outline-none text-gray-700 placeholder-gray-500 text-base"
           />
         </div>
