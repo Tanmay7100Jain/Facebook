@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Setting from "./Setting";
+import React from "react";
 
 const FriendItem = ({ icon, label, onClick, selected }) => (
   <div
