@@ -53,7 +53,6 @@ const Home = () => {
             className="w-full bg-transparent outline-none text-gray-700 placeholder-gray-500 text-base"
           />
         </div>
-
         <div className="flex justify-around bg-white p-3 rounded-lg shadow-md">
           <div className="flex items-center space-x-2 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
             <img src="img21.png" alt="Live" className="h-6 w-6" />

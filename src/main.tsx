@@ -10,6 +10,7 @@ if (container) {
     <StrictMode>
       <App />
     </StrictMode>
+    
   )
 } else {
   console.error("Root container not found")

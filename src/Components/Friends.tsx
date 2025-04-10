@@ -45,7 +45,6 @@ const Friends = () => {
             onClick={() => setSelected("setting")}
             />
         </div>
-
             {selected === "setting" && <Setting />}
         {items.map((item, index) => (
           <FriendItem

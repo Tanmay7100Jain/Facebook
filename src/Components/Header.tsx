@@ -26,7 +26,6 @@ const Header = ({ selected, setSelected }) => {
             aria-label="Search Facebook"
           />
         </div>
-
         <div
           className="flex space-x-3"
           role="group"

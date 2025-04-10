@@ -12,6 +12,7 @@ const Middle = ({ selected }) => {
         {selected === "Friends" && <Friends />}
         {selected === "Watch" && <Watch />}
         {selected === "Marketplace" && <Marketplace />}
+
       </div>
     </div>
   );
