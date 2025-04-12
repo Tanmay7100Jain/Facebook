@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Menu from './Menu';
 
 const items = [
   { icon: 'account.png', label: 'Tanmay Jain' },
@@ -19,6 +20,7 @@ const Home = () => {
   const [selected, setSelected] = useState("Tanmay Jain");
 
   return (
+    <>
     <div className="flex flex-col md:flex-row px-4 py-6 gap-6">
       <div className="h-[28rem] overflow-y-auto flex flex-col items-start space-y-4 w-full md:w-72 p-2 pr-4 rounded-md bg-white shadow-sm scroll-smooth scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
         {items.map((item, index) => (
@@ -69,6 +71,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
