@@ -55,7 +55,7 @@ const Friends = () => {
             selected={selected === item.label}
           />
         ))}
-
+          <div></div>
       </div>
     </div>
     </>
