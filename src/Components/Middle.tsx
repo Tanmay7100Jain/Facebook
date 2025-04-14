@@ -5,6 +5,7 @@ import Watch from "./Watch";
 import Marketplace from "./Marketplace";
 import Friend from "./Friend";
 import Menu from "./Menu";
+import Notifications from  "./Notifications"
 
 const Middle = ({ selected }) => {
   return (
@@ -16,7 +17,7 @@ const Middle = ({ selected }) => {
         {selected === "Marketplace" && <Marketplace />}
         {selected === "Friend" && <Friend />}
         {selected === "Menu" && <Menu />}
-
+        {selected === "Notifications" && <Notifications />}
       </div>
     </div>
   );
