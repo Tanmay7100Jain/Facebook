@@ -17,7 +17,6 @@ const Friends = () => {
 
   return (
     <>
-    <div className="">
     <div className="h-[28rem] overflow-y-auto flex flex-col items-start space-y-4 w-full md:w-72 p-2 pr-4 rounded-md bg-white shadow-sm scroll-smooth scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
         
         <div className="flex justify-between items-center w-full">
@@ -40,7 +39,6 @@ const Friends = () => {
           />
         ))}
       </div>
-    </div>
     </>
   );
 };

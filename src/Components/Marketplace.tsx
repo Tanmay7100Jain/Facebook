@@ -29,6 +29,7 @@ const MarketPlace = () => {
   
 
   return (
+    <>
     <div className="h-[28rem] overflow-y-auto flex flex-col items-start space-y-4 w-full md:w-72 p-4 rounded-md bg-white shadow-sm scroll-smooth scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
       
 
@@ -55,6 +56,7 @@ const MarketPlace = () => {
           />
         ))}
     </div>
+    </>
   );
 };
 

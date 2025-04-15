@@ -4,6 +4,7 @@ const Setting = () => {
   const [color, setColor] = useState(true);
 
   return (
+    <>
     <div className="w-full mt-4 px-2">
       <h1 className="font-bold text-[23px] mb-2">Notification Settings</h1>
       <p className="text-gray-600 text-sm mb-4">
@@ -35,6 +36,7 @@ const Setting = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

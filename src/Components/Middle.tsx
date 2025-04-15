@@ -6,9 +6,11 @@ import Marketplace from "./Marketplace";
 import Friend from "./Friend";
 import Menu from "./Menu";
 import Notifications from  "./Notifications"
+import Account from "./Account";
 
 const Middle = ({ selected }) => {
   return (
+    <>
     <div className="text-4xl w-full flex justify-center">
       <div className="h-full w-full bg-white   ">
         {selected === "Home" && <Home />}
@@ -18,8 +20,11 @@ const Middle = ({ selected }) => {
         {selected === "Friend" && <Friend />}
         {selected === "Menu" && <Menu />}
         {selected === "Notifications" && <Notifications />}
+        {selected === "Account" && <Account />}
+        
       </div>
     </div>
+    </>
   );
 };
 
