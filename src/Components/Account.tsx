@@ -1,6 +1,6 @@
 import React from "react";
 
-const Account: React.FC = () => {
+const Account = () => {
   return (
     <div className="shadow-3xl rounded-xl p-4 bg-white">
       <div className="flex items-center space-x-2">
