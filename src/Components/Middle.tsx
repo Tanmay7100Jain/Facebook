@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./Home";
 import Friends from "./Friends";
-import Watch from "./Watch";
 import Marketplace from "./Marketplace";
 import Friend from "./Friend";
 import Menu from "./Menu";
@@ -15,7 +14,6 @@ const Middle = ({ selected }) => {
       <div className="h-full w-full bg-white   ">
         {selected === "Home" && <Home />}
         {selected === "Friends" && <Friends />}
-        {selected === "Watch" && <Watch />}
         {selected === "Marketplace" && <Marketplace />}
         {selected === "Friend" && <Friend />}
         {selected === "Menu" && <Menu />}

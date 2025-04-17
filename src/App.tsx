@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./Components/Header";
 import Middle from "./Components/Middle";
 import React from "react";
-import "./App.css";
 
 function App() {
   const [selected, setSelected] = useState("Home");

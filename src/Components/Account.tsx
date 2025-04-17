@@ -17,6 +17,9 @@ const Account = () => {
       <div className="h-10 mt-4 w-80 bg-gray-600 flex justify-center items-center text-2xl text-white cursor-pointer hover:bg-gray-700 transition">
         See all profiles
       </div>
+      <div>
+        
+      </div>
     </div>
   );
 };
