@@ -1,6 +1,7 @@
 import React from "react";
 const Navbar = ({ icon, label, onClick, selected }) => (
-  <div
+<>
+<div
     role="button"
     tabIndex={0}
     onClick={onClick}
@@ -14,5 +15,6 @@ const Navbar = ({ icon, label, onClick, selected }) => (
     />
     <span className="text-base font-medium">{label}</span>
   </div>
-);
+ </>
+); 
 export default Navbar;

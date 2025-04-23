@@ -6,6 +6,7 @@ import Friend from "./Friend";
 import Menu from "./Menu";
 import Notifications from  "./Notifications"
 import Account from "./Account";
+import Messages from "./Messages";
 
 const Middle = ({ selected }) => {
   return (
@@ -19,6 +20,8 @@ const Middle = ({ selected }) => {
         {selected === "Menu" && <Menu />}
         {selected === "Notifications" && <Notifications />}
         {selected === "Account" && <Account />}
+        {selected === "Messages" && <Messages />}
+
         
       </div>
     </div>

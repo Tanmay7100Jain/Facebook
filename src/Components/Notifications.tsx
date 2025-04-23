@@ -45,6 +45,7 @@ const NotificationsItem = {
 
 const Notifications = () => {
   return (
+    <>
     <div className="w-96 bg-white shadow-lg rounded-lg p-4 overflow-y-auto  max-w-md mx-auto max-h-[600px]">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Notifications</h2>
@@ -96,6 +97,7 @@ const Notifications = () => {
       <div>
       </div>
     </div>
+    </>
   );
 };
 
