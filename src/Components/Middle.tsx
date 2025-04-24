@@ -21,8 +21,6 @@ const Middle = ({ selected }) => {
         {selected === "Notifications" && <Notifications />}
         {selected === "Account" && <Account />}
         {selected === "Messages" && <Messages />}
-
-        
       </div>
     </div>
     </>
